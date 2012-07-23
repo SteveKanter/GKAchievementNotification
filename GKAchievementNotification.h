@@ -18,7 +18,7 @@
 #define kGKAchievementDefaultiPhoneSize CGSizeMake(284.f, 52.f);
 #define kGKAchievementDefaultiPadSize   CGSizeMake(426.f, 52.f);
 
-#define kGKAchievementDefaultBackground @"gk-notification.png"
+#define kGKAchievementDefaultBackground @"GKAchievementNotification.bundle/gk-notification.png"
 
 /*
 #define kGKAchievementDefaultSize   CGRectMake(0.0f, 0.0f, 284.0f, 52.0f);
@@ -147,7 +147,8 @@
 @property (nonatomic, readwrite) CGPoint iconPosition;
 @property (nonatomic, readwrite) CGPoint backgroundStrech;
 
-@property (nonatomic, readonly) UIImage* backgroundImage;
+-(void) setBackgroundImage:(NSString *)imageName;
+-(UIImage *) backgroundImage;
 
 #pragma mark -
 

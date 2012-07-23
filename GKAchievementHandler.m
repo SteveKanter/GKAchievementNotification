@@ -68,7 +68,7 @@ static GKAchievementHandler *defaultHandler = nil;
     {
         _keyWindow = [[UIApplication sharedApplication] keyWindow];
         _queue = [[NSMutableArray alloc] initWithCapacity:0];
-        self.image = [UIImage imageNamed:@"gk-icon.png"];
+        self.image = [UIImage imageNamed:@"GKAchievementNotification.bundle/gk-icon.png"];
     }
     return self;
 }

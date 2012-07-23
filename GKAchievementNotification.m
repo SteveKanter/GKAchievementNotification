@@ -71,7 +71,6 @@
 @synthesize titlePosition=_titlePosition;
 @synthesize descriptionPosition=_descriptionPosition;
 
-@synthesize backgroundImage=_backgroundImage;
 
 #pragma mark -
 
@@ -374,6 +373,9 @@
     self.opaque = NO;
     //   [tBackground release];
     [self addSubview:self.background];
+}
+-(UIImage *) backgroundImage {
+	return _backgroundImage;
 }
 
 @end
