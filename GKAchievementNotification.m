@@ -41,7 +41,10 @@
     {
         if ([self.handlerDelegate respondsToSelector:selector])
         {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
             [self.handlerDelegate performSelector:selector withObject:object];
+#pragma clang diagnostic pop
         }
     }
 }
